@@ -107,8 +107,10 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
                 //to share multiple files
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND_MULTIPLE);
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Here are some files.");
-                intent.setType("image/jpeg"); /* This example is sharing jpeg images. */
+                intent.putExtra(Intent.EXTRA_SUBJECT, "VOC report");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"abc@gmail.com"});
+                intent.putExtra(Intent.EXTRA_TEXT, "We will get back to you asap." );
+                intent.setType("message/rfc822"); /* This example is sharing email. */
 
                 ArrayList<Uri> files = new ArrayList<Uri>();
                 String [] filesToSend = new String[]{"/sdcard/jungBook.mp4","/sdcard/jungBook.mp4"};
