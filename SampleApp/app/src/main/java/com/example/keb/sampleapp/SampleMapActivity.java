@@ -1,18 +1,23 @@
 package com.example.keb.sampleapp;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
+import android.widget.VideoView;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -22,13 +27,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SampleMapActivity extends FragmentActivity implements OnMapReadyCallback,GoogleMap.OnMapClickListener {
     private static final String TAG = "SampleMapActivity";
@@ -50,6 +51,29 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
         String[] list = new String[] {"ScreenRecord","ScreenShot","logCApture"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,android.R.id.text1,list);
         mListView.setAdapter(adapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
+                switch(pos) {
+                    case 0:
+                        final Dialog dialog = new Dialog(SampleMapActivity.this);
+                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                        dialog.setContentView(R.layout.video_player);
+                        dialog.show();
+                        WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
+                                WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
+                        lp.copyFrom(dialog.getWindow().getAttributes());
+                        lp.dimAmount = 0;
+                        dialog.getWindow().setAttributes(lp);
+                        final VideoView videoview = dialog.findViewById(R.id.video_view);
+                        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.livebooks);
+                        videoview.setVideoURI(uri);
+                        videoview.start();
+                        Toast.makeText(getApplicationContext(),"Recording",Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -101,7 +125,7 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
         }
     }
 
-	@SuppressWarnings("MissingPermission")
+    @SuppressWarnings("MissingPermission")
     private void getLastLocation() {
         mFusedLocationClient.getLastLocation()
                 .addOnCompleteListener(this, new OnCompleteListener<Location>() {
