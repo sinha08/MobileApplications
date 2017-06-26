@@ -31,6 +31,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import java.io.File;
+
 public class SampleMapActivity extends FragmentActivity implements OnMapReadyCallback,GoogleMap.OnMapClickListener {
     private static final String TAG = "SampleMapActivity";
     private GoogleMap mMap;
@@ -66,7 +68,8 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
                         lp.dimAmount = 0;
                         dialog.getWindow().setAttributes(lp);
                         final VideoView videoview = dialog.findViewById(R.id.video_view);
-                        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.livebooks);
+                        //Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.livebooks);
+                        Uri uri = Uri.fromFile(new File("/sdcard/jungBook.mp4"));
                         videoview.setVideoURI(uri);
                         videoview.start();
                         Toast.makeText(getApplicationContext(),"Recording",Toast.LENGTH_SHORT).show();
@@ -154,7 +157,7 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
 
     private void startLocationPermissionRequest() {
         ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.WRITE_EXTERNAL_STORAGE},
                 REQUEST_PERMISSIONS_REQUEST_CODE);
     }
 
