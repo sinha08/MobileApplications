@@ -2,6 +2,7 @@ package com.example.keb.sampleapp;
 
 import android.Manifest;
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
@@ -32,6 +33,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class SampleMapActivity extends FragmentActivity implements OnMapReadyCallback,GoogleMap.OnMapClickListener {
     private static final String TAG = "SampleMapActivity";
@@ -82,10 +84,10 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
-        floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
-        floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
-        floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
+        materialDesignFAM = findViewById(R.id.material_design_android_floating_action_menu);
+        floatingActionButton1 = findViewById(R.id.material_design_floating_action_menu_item1);
+        floatingActionButton2 = findViewById(R.id.material_design_floating_action_menu_item2);
+        floatingActionButton3 = findViewById(R.id.material_design_floating_action_menu_item3);
 
         floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -102,7 +104,31 @@ public class SampleMapActivity extends FragmentActivity implements OnMapReadyCal
         floatingActionButton3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //TODO something when floating action menu third item clicked
-                Toast.makeText(getApplicationContext(),"Menu 3",Toast.LENGTH_SHORT).show();
+                //to share multiple files
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND_MULTIPLE);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Here are some files.");
+                intent.setType("image/jpeg"); /* This example is sharing jpeg images. */
+
+                ArrayList<Uri> files = new ArrayList<Uri>();
+                String [] filesToSend = new String[]{"/sdcard/jungBook.mp4","/sdcard/jungBook.mp4"};
+
+                for(String path : filesToSend /* List of the files you want to send */) {
+                    File file = new File(path);
+                    Uri uri = Uri.fromFile(file);
+                    files.add(uri);
+                }
+
+                intent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, files);
+                startActivity(intent);
+
+                // to share single file
+//                Uri uri = Uri.fromFile(new File("/sdcard/jungBook.mp4"));
+//                Intent share = new Intent(Intent.ACTION_SEND);
+//                share.setType("*/*");
+//                share.putExtra(Intent.EXTRA_STREAM, uri);
+//                startActivity(Intent.createChooser(share, "Share Sound File"));
+                Toast.makeText(getApplicationContext(),"Sharing Files",Toast.LENGTH_SHORT).show();
             }
         });
     }

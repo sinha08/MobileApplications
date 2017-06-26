@@ -67,7 +67,7 @@
             android:id="@+id/material_design_floating_action_menu_item1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_camera"
+            android:src="@android:drawable/ic_media_play"
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
