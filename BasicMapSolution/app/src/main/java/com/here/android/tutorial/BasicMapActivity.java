@@ -7,6 +7,7 @@
  */
 package com.here.android.tutorial;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,9 +24,12 @@ import android.util.Log;
 import android.view.Menu;
 
 import com.here.android.mpa.common.GeoCoordinate;
+import com.here.android.mpa.common.GeoPosition;
 import com.here.android.mpa.common.OnEngineInitListener;
+import com.here.android.mpa.common.PositioningManager;
 import com.here.android.mpa.mapping.Map;
 import com.here.android.mpa.mapping.MapFragment;
+import com.vividsolutions.jts.geomgraph.Position;
 
 public class BasicMapActivity extends Activity {
     private static final String LOG_TAG = BasicMapActivity.class.getSimpleName();
@@ -41,16 +45,33 @@ public class BasicMapActivity extends Activity {
 
     // map embedded in the map fragment
     private Map map = null;
-
+    private boolean paused = true;
     // map fragment embedded in this activity
     private MapFragment mapFragment = null;
+    private PositioningManager posManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         checkPermissions();
+        posManager = PositioningManager.getInstance();
+        PositioningManager.getInstance().addListener(
+                new WeakReference<PositioningManager.OnPositionChangedListener>(positionListener));
     }
 
+    private PositioningManager.OnPositionChangedListener positionListener = new PositioningManager.OnPositionChangedListener() {
+        public void onPositionUpdated(PositioningManager.LocationMethod method,
+                                      GeoPosition position, boolean isMapMatched) {
+
+            if (!paused && position != null) {
+                map.setCenter(position.getCoordinate(),
+                        Map.Animation.NONE);
+            }
+        }
+    public void onPositionFixChanged(PositioningManager.LocationMethod method,
+                                     PositioningManager.LocationStatus status) {
+    }
+};
     private void initialize() {
         setContentView(R.layout.activity_main);
 
@@ -63,10 +84,14 @@ public class BasicMapActivity extends Activity {
                     // retrieve a reference of the map from the map fragment
                     map = mapFragment.getMap();
                     // Set the map center to the Vancouver region (no animation)
-                    map.setCenter(new GeoCoordinate(49.196261, -123.004773, 0.0),
-                            Map.Animation.NONE);
+                    posManager.start(PositioningManager.LocationMethod.GPS_NETWORK);
+                    if (posManager.getPosition() != null ) {
+                        map.setCenter(new GeoCoordinate(posManager.getPosition().getLatitudeAccuracy(), posManager.getPosition().getLongitudeAccuracy()),
+                                Map.Animation.NONE);
+                    }
                     // Set the zoom level to the average between min and max
                     map.setZoomLevel((map.getMaxZoomLevel() + map.getMinZoomLevel()) / 2);
+                    map.getPositionIndicator().setVisible(true);
                 } else {
                     Log.e(LOG_TAG, "Cannot initialize MapFragment (" + error + ")");
                 }
@@ -123,5 +148,35 @@ public class BasicMapActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        paused = false;
+        if (posManager != null) {
+            posManager.start(
+                    PositioningManager.LocationMethod.GPS_NETWORK);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        if (posManager != null) {
+            posManager.stop();
+        }
+        super.onPause();
+        paused = true;
+    }
+
+    @Override
+    public void onDestroy() {
+        if (posManager != null) {
+// Cleanup
+            posManager.removeListener(
+                    positionListener);
+        }
+        map = null;
+        super.onDestroy();
     }
 }

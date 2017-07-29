@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\af17edff890ad73184712d48dc64dbc7a46d0bf3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_aa8ad21e601485bc3bf3b3c3d455778bd1ca26aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_13447f7dd1e8a7cd74ae0ebf809b95531d25d1cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\a439e1a9c459e443253d6d00b219da4d648991f3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a7a97be9a3c29e7b0681a96949dbe07b4297e998\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.gradle\caches\modules-2\files-2.1\com.vividsolutions\jts\1.13\3ccfb9b60f04d71add996a666ceb8902904fd805\jts-1.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3ccfb9b60f04d71add996a666ceb8902904fd805">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\jts-1.13_17caf12d5fda31623e11dbcd3cc232ece9d12034\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b08b61ab89cfcc4680f052e25fbde7b94b993a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3611882cfbaf65a1611ac4fefcfedb8822a35f6f">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_3d3ff5a3d7986f0764a95f13e2a5a6596c999baa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\03f98146ef56c4740a8f45e5f17d2c0cc7759b37\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d5dec1c3752b98235b372d2bdecad5bb11333816\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_754e9f1360588a734d95d5e540f3ec3767ad38e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\ad5641ddeb5871ea4287380694f4c741df04ae33\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ecbcca127a7a4fd3225686c1f68475bd39fff38b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\2674696dd67aafacc995c9b5a06e39d1feeba32d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c01cd7cd2c3937a5cfea51ff12792a595f771700\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ankur sinha\.android\build-cache\172fcf20e0473dc668b47710adb166e899adf4e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0f244536fe6b5e55a1f2f90dc541cb05ee5cad6a">
+        <dex dex="C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_14c80e8116687ab82b0b5aba5185d23325b16e9a\classes.dex" />
+    </item>
+
+</items>

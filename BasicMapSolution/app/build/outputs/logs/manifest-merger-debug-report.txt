@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:10:5-78
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:12:22-73
+application
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:14:5-36:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\ankur sinha\.android\build-cache\03f98146ef56c4740a8f45e5f17d2c0cc7759b37\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\2674696dd67aafacc995c9b5a06e39d1feeba32d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\ankur sinha\.android\build-cache\af17edff890ad73184712d48dc64dbc7a46d0bf3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\ankur sinha\.android\build-cache\ad5641ddeb5871ea4287380694f4c741df04ae33\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\a439e1a9c459e443253d6d00b219da4d648991f3\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:17:9-41
+	android:hardwareAccelerated
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:16:9-43
+activity#com.here.android.tutorial.BasicMapActivity
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:20:9-28:20
+	android:label
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:22:13-45
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:21:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:26:27-74
+meta-data#com.here.android.maps.appid
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:30:9-32:52
+	android:value
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:31:13-55
+meta-data#com.here.android.maps.apptoken
+ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:33:9-35:54
+	android:value
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:35:13-51
+	android:name
+		ADDED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml:34:13-58
+uses-sdk
+INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\ankur sinha\.android\build-cache\03f98146ef56c4740a8f45e5f17d2c0cc7759b37\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\2674696dd67aafacc995c9b5a06e39d1feeba32d\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\ankur sinha\.android\build-cache\af17edff890ad73184712d48dc64dbc7a46d0bf3\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\ankur sinha\.android\build-cache\ad5641ddeb5871ea4287380694f4c741df04ae33\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\a439e1a9c459e443253d6d00b219da4d648991f3\output\AndroidManifest.xml:21:5-23:58
+MERGED from [BasicMapSolution:HERE-sdk:unspecified] C:\Users\ankur sinha\.android\build-cache\172fcf20e0473dc668b47710adb166e899adf4e9\output\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ankur sinha\Downloads\HERE_Android_SDK_Starter_v3.4.0_76\HERE-sdk\tutorial\BasicMapSolution\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\ankur sinha\.android\build-cache\03f98146ef56c4740a8f45e5f17d2c0cc7759b37\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\2674696dd67aafacc995c9b5a06e39d1feeba32d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\ankur sinha\.android\build-cache\af17edff890ad73184712d48dc64dbc7a46d0bf3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\ankur sinha\.android\build-cache\ad5641ddeb5871ea4287380694f4c741df04ae33\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\ankur sinha\.android\build-cache\a439e1a9c459e443253d6d00b219da4d648991f3\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\ankur sinha\.android\build-cache\f89bb70a1e5d689db2aab246c49006c9a4f82989\output\AndroidManifest.xml:26:9-47
